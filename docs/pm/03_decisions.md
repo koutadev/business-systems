@@ -93,3 +93,4 @@ DEC-xxx｜日付｜対象｜決定｜背景・理由｜却下した案
 - 決定：モバイル対応の修正は共通基盤(laravel-business-template)で行い、reservation-yoga・crm-salesへ同期する。ただしreservation-yogaが共有ファイルを先行改変しているため、先に汎用8ファイルをテンプレートへback-portし、同期スクリプトに製品固有（NavigationMenu・components/lesson/・HomeRoute・MemberLayout）の除外を追加してから同期する。
 - 理由：sync-shared-ui.shがrsync --deleteのため、back-port・除外設定を先にしないと先行変更や製品固有部品が消える。
 - 却下案：各システムで個別修正（重複・不整合／共通基盤の意義を失う）。
+- 補足（M0実機検証）：sync-shared-ui.sh は --delete-excluded ではなく --delete＋--exclude を使う（--delete-excludedは除外ファイルごと削除する。openrsyncでは無害だがGNU rsyncで発火する環境依存の罠）。製品固有はKEEP→--excludeで保護。
