@@ -74,3 +74,5 @@ GitHubへpushするタイミングで1行追記する。バージョン（また
 | 2026-09 | M1 会員確認ダイアログの機能不全を修正（ISS-021）。共通基盤のmodal.jsにdata-open-modalのAlpine非依存経路を追加し「レイアウトにx-data欠落で沈黙する」脆さを解消（後方互換維持）。3リポジトリ同期 | DEC-017 |
 
 | 2026-09 | M2 共有ポップアップ（datepicker/date-range/combobox）のモバイル対応（ISS-016）。popup.jsに配置ロジック集約・640px未満はボトムシート・監査ツールbin/mobile-audit.mjsを常設。3リポジトリ同期、before/after実測 | DEC-017 |
+
+| 2026-09 | M3 一覧のモバイルカード化（ISS-018）＋ネイティブconfirmをx-confirm-dialogに統一（ISS-019のG）。th→data-label転写で記述不要、md以上は不変。全一覧のはみ出しを0に（before/after実測）。3リポジトリ同期 | DEC-017 |
