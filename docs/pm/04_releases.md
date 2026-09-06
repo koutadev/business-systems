@@ -72,3 +72,5 @@ GitHubへpushするタイミングで1行追記する。バージョン（また
 | 2026-09 | M0 モバイル対応の下ごしらえ：共通基盤へ汎用8ファイルをback-port、同期スクリプト整備（reservation-yogaに新設・製品固有をKEEP除外）。rsyncの--delete-excludedが除外ファイルを消す地雷を実機検証し--deleteに修正。3リポジトリCI緑 | DEC-017 |
 
 | 2026-09 | M1 会員確認ダイアログの機能不全を修正（ISS-021）。共通基盤のmodal.jsにdata-open-modalのAlpine非依存経路を追加し「レイアウトにx-data欠落で沈黙する」脆さを解消（後方互換維持）。3リポジトリ同期 | DEC-017 |
+
+| 2026-09 | M2 共有ポップアップ（datepicker/date-range/combobox）のモバイル対応（ISS-016）。popup.jsに配置ロジック集約・640px未満はボトムシート・監査ツールbin/mobile-audit.mjsを常設。3リポジトリ同期、before/after実測 | DEC-017 |
