@@ -76,3 +76,5 @@ GitHubへpushするタイミングで1行追記する。バージョン（また
 | 2026-09 | M2 共有ポップアップ（datepicker/date-range/combobox）のモバイル対応（ISS-016）。popup.jsに配置ロジック集約・640px未満はボトムシート・監査ツールbin/mobile-audit.mjsを常設。3リポジトリ同期、before/after実測 | DEC-017 |
 
 | 2026-09 | M3 一覧のモバイルカード化（ISS-018）＋ネイティブconfirmをx-confirm-dialogに統一（ISS-019のG）。th→data-label転写で記述不要、md以上は不変。全一覧のはみ出しを0に（before/after実測）。3リポジトリ同期 | DEC-017 |
+
+| 2026-09 | M4 ドロワー/モーダルのスクロールロック統一（ISS-017）＋タップ領域44px一括適用（ISS-019）。scroll-lock.jsで所有者計数、Size定義でモバイルのみ44px（デスクトップ不変）。44px未満をほぼ0に（before/after実測）。3リポジトリ同期 | DEC-017 |
